@@ -23,6 +23,8 @@ def get_inputs():
         if re.match(p1, link):
             link = link[:link.find("html")-1]
             break
+        elif re.match(p2,link):
+            break
         else:
             print("\nInvalid URL!\nTry again!\n\n")
 

@@ -75,7 +75,10 @@ def save_video(link, name):
 
     else:
         wget.download(link, name)
-    print(path)
-
+        
+    try:
+        print(path)
+    except:
+        pass
 
 get_inputs()
